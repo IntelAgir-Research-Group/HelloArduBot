@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/HelloArduBotModels/src" modelPluginID="HelloArduBotModels"
+    modelName="HelloArduBot" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>HelloArduBot1.ecore</foreignModel>
+  <genPackages prefix="HelloArduBot" disposableProviderFactory="true" ecorePackage="HelloArduBot1.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="HelloArduBot1.ecore#//Tipo"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="HelloArduBot1.ecore#//Sentido"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="HelloArduBot1.ecore#//TipoBeep"/>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="HelloArduBot1.ecore#//TipoPorta"/>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Model/codigo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Model/variavel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Model/funcao"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Codigo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Codigo/iteracao"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Codigo/controle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Codigo/robo"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Variavel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Variavel/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Variavel/valor"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Robo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Robo/atuacao"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Robo/sensoriamento"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Controle">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Controle/se"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Controle/escolha"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Iteracao">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Iteracao/para"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Iteracao/enquanto"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Iteracao/repita"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Sensoriamento">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Sensoriamento/porta"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Sensoriamento/tipo"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Atuacao">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Atuacao/movimento"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Atuacao/notificacao"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Funcao">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Funcao/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Funcao/parametro"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Notificacao">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Notificacao/beep"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Notificacao/display"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Notificacao/led"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Movimento">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Movimento/motordc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Movimento/servo"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Servo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Servo/posicao"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//MotorDC">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//MotorDC/motor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//MotorDC/velocitade"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//MotorDC/sentido"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//LED">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//LED/ligar"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Display">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Display/mensagem"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Se">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Se/condicao"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Se/senao"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Escolha">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloArduBot1.ecore#//Escolha/caso"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Para">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Para/de"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Para/ate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Para/passo"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Enquanto">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Enquanto/condicao"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Repita">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Repita/ate"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Caso">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Caso/valor"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Senao"/>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Beep">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Beep/tipo"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
