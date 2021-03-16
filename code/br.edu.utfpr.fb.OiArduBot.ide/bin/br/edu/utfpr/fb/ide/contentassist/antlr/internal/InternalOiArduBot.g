@@ -124,6 +124,31 @@ finally {
 	restoreStackSize(stackSize);
 }
 
+// Entry rule entryRuleSenao
+entryRuleSenao
+:
+{ before(grammarAccess.getSenaoRule()); }
+	 ruleSenao
+{ after(grammarAccess.getSenaoRule()); } 
+	 EOF 
+;
+
+// Rule Senao
+ruleSenao 
+	@init {
+		int stackSize = keepStackSize();
+	}
+	:
+	(
+		{ before(grammarAccess.getSenaoAccess().getGroup()); }
+		(rule__Senao__Group__0)
+		{ after(grammarAccess.getSenaoAccess().getGroup()); }
+	)
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
 // Entry rule entryRuleSensoriamento
 entryRuleSensoriamento
 :
@@ -908,6 +933,60 @@ finally {
 }
 
 
+rule__Senao__Group__0
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+	rule__Senao__Group__0__Impl
+	rule__Senao__Group__1
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Senao__Group__0__Impl
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+(
+	{ before(grammarAccess.getSenaoAccess().getSeNaoKeyword_0()); }
+	'SeNao'
+	{ after(grammarAccess.getSenaoAccess().getSeNaoKeyword_0()); }
+)
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Senao__Group__1
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+	rule__Senao__Group__1__Impl
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Senao__Group__1__Impl
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+(
+	{ before(grammarAccess.getSenaoAccess().getCodigoSenaoAssignment_1()); }
+	(rule__Senao__CodigoSenaoAssignment_1)
+	{ after(grammarAccess.getSenaoAccess().getCodigoSenaoAssignment_1()); }
+)
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+
 rule__Sensoriamento__Group__0
 	@init {
 		int stackSize = keepStackSize();
@@ -1511,6 +1590,21 @@ rule__Para__CodigoParaAssignment_7
 		{ before(grammarAccess.getParaAccess().getCodigoParaSTRINGTerminalRuleCall_7_0()); }
 		RULE_STRING
 		{ after(grammarAccess.getParaAccess().getCodigoParaSTRINGTerminalRuleCall_7_0()); }
+	)
+;
+finally {
+	restoreStackSize(stackSize);
+}
+
+rule__Senao__CodigoSenaoAssignment_1
+	@init {
+		int stackSize = keepStackSize();
+	}
+:
+	(
+		{ before(grammarAccess.getSenaoAccess().getCodigoSenaoSTRINGTerminalRuleCall_1_0()); }
+		RULE_STRING
+		{ after(grammarAccess.getSenaoAccess().getCodigoSenaoSTRINGTerminalRuleCall_1_0()); }
 	)
 ;
 finally {

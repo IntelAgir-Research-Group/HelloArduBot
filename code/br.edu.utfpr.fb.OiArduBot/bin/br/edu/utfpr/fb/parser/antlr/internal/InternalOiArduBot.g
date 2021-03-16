@@ -342,6 +342,47 @@ rulePara returns [EObject current=null]
 	)
 ;
 
+// Entry rule entryRuleSenao
+entryRuleSenao returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getSenaoRule()); }
+	iv_ruleSenao=ruleSenao
+	{ $current=$iv_ruleSenao.current; }
+	EOF;
+
+// Rule Senao
+ruleSenao returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		otherlv_0='SeNao'
+		{
+			newLeafNode(otherlv_0, grammarAccess.getSenaoAccess().getSeNaoKeyword_0());
+		}
+		(
+			(
+				lv_codigoSenao_1_0=RULE_STRING
+				{
+					newLeafNode(lv_codigoSenao_1_0, grammarAccess.getSenaoAccess().getCodigoSenaoSTRINGTerminalRuleCall_1_0());
+				}
+				{
+					if ($current==null) {
+						$current = createModelElement(grammarAccess.getSenaoRule());
+					}
+					setWithLastConsumed(
+						$current,
+						"codigoSenao",
+						lv_codigoSenao_1_0,
+						"org.eclipse.xtext.common.Terminals.STRING");
+				}
+			)
+		)
+	)
+;
+
 // Entry rule entryRuleSensoriamento
 entryRuleSensoriamento returns [EObject current=null]:
 	{ newCompositeNode(grammarAccess.getSensoriamentoRule()); }

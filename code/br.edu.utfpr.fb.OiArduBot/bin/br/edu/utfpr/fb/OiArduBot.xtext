@@ -38,10 +38,13 @@ Para:
 Se:
 	'Se' condicaoSe=STRING
 		codigoSe=STRING
-	('SeNao' 
-		codigoSenao=STRING
-	)?
+	(senao+=Senao)?
 	'FimSe'
+;
+
+Senao:
+	'SeNao' 
+		codigoSenao=STRING
 ;
 
 // Robo
