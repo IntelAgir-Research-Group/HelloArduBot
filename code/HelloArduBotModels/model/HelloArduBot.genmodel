@@ -66,8 +66,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//MotorDC/velocitade"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//MotorDC/sentido"/>
     </genClasses>
-    <genClasses ecoreClass="HelloArduBot1.ecore#//LED">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//LED/ligar"/>
+    <genClasses ecoreClass="HelloArduBot1.ecore#//Ligar">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Ligar/ligar"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Ligar/porta"/>
     </genClasses>
     <genClasses ecoreClass="HelloArduBot1.ecore#//Display">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloArduBot1.ecore#//Display/mensagem"/>

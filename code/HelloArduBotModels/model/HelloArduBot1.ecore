@@ -63,7 +63,7 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="display" upperBound="-1"
         eType="#//Display" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="led" upperBound="-1" eType="#//LED"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="led" upperBound="-1" eType="#//Ligar"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Movimento">
@@ -82,8 +82,10 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="sentido" eType="#//Sentido"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LED">
+  <eClassifiers xsi:type="ecore:EClass" name="Ligar">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ligar" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="porta" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Int"
+        defaultValueLiteral="1"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Display">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mensagem" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>

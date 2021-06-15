@@ -19,7 +19,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="HelloArduBot.ecore#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YxPEkYGsEeuJhJZnOFfGeA" name="HelloArduBot class diagram" repPath="#_YxOdgIGsEeuJhJZnOFfGeA" changeId="a37e7f07-9e3b-47fd-9525-593298eee21e">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YxPEkYGsEeuJhJZnOFfGeA" name="HelloArduBot class diagram" repPath="#_YxOdgIGsEeuJhJZnOFfGeA" changeId="eeef1077-3418-4a88-85ca-349e9e70232d">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
         <target xmi:type="ecore:EPackage" href="HelloArduBot1.ecore#/"/>
       </ownedRepresentationDescriptors>
@@ -2218,11 +2218,15 @@
               <styles xmi:type="notation:FontStyle" xmi:id="_2dEvcYG5EeuJhJZnOFfGeA" fontColor="2697711" fontName="Ubuntu" fontHeight="8"/>
               <layoutConstraint xmi:type="notation:Location" xmi:id="_2dEvcoG5EeuJhJZnOFfGeA"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_TG2DoIwrEeuex7MjXWRhPg" type="3010" element="_TGEAgIwrEeuex7MjXWRhPg">
+              <styles xmi:type="notation:FontStyle" xmi:id="_TG2DoYwrEeuex7MjXWRhPg" fontColor="2697711" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_TG2DoowrEeuex7MjXWRhPg"/>
+            </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_Tqm3EoGuEeuJhJZnOFfGeA"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_Tqm3E4GuEeuJhJZnOFfGeA"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_TqmQAYGuEeuJhJZnOFfGeA" fontName="Ubuntu" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TqmQAoGuEeuJhJZnOFfGeA" x="-492" y="432" width="120" height="61"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TqmQAoGuEeuJhJZnOFfGeA" x="-492" y="432" width="120" height="75"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_XM0ZkIGuEeuJhJZnOFfGeA" type="2003" element="_XMZi0IGuEeuJhJZnOFfGeA">
           <children xmi:type="notation:Node" xmi:id="_XM0Zk4GuEeuJhJZnOFfGeA" type="5007"/>
@@ -2986,20 +2990,28 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_TqIV8IGuEeuJhJZnOFfGeA" name="LED" tooltipText="" incomingEdges="_7QeNDIG5EeuJhJZnOFfGeA" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="HelloArduBot1.ecore#//LED"/>
-      <semanticElements xmi:type="ecore:EClass" href="HelloArduBot1.ecore#//LED"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_TqIV8IGuEeuJhJZnOFfGeA" name="Ligar" tooltipText="" incomingEdges="_7QeNDIG5EeuJhJZnOFfGeA" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="HelloArduBot1.ecore#//Ligar"/>
+      <semanticElements xmi:type="ecore:EClass" href="HelloArduBot1.ecore#//Ligar"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_GUukv4G6EeuJhJZnOFfGeA" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_oxQhoYwrEeuex7MjXWRhPg" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_2cwmYIG5EeuJhJZnOFfGeA" name="ligar : Boolean = false" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="HelloArduBot1.ecore#//LED/ligar"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="HelloArduBot1.ecore#//LED/ligar"/>
+        <target xmi:type="ecore:EAttribute" href="HelloArduBot1.ecore#//Ligar/ligar"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="HelloArduBot1.ecore#//Ligar/ligar"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_54RD8IG5EeuJhJZnOFfGeA" labelAlignment="LEFT">
+          <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_TGEAgIwrEeuex7MjXWRhPg" name="porta : Int = 1" tooltipText="">
+        <target xmi:type="ecore:EAttribute" href="HelloArduBot1.ecore#//Ligar/porta"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="HelloArduBot1.ecore#//Ligar/porta"/>
+        <ownedStyle xmi:type="diagram:BundledImage" uid="_oxUMAYwrEeuex7MjXWRhPg" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
