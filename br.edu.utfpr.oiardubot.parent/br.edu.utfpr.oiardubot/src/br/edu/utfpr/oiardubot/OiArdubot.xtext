@@ -1,0 +1,332 @@
+grammar br.edu.utfpr.oiardubot.OiArdubot with org.eclipse.xtext.common.Terminals
+
+generate oiArdubot "http://www.edu.br/utfpr/oiardubot/OiArdubot"
+
+
+Model:
+(var+="Variaveis")?
+(variaveis+=Variavel)*
+(constantes+=Constante)*
+ini+="Inicio"
+(codigo+=Implementacao)*
+fim+="Fim"
+;
+
+Codigo:
+(code+=Implementacao)*
+;
+
+Implementacao:
+Se|VariavelExistente|Tela|Ligar|Desligar|Bip|Escolha|Para|Enquanto|Repita|Ler|Servo|MotorDC|Funcao|Espera|Escrever|LerDigital|LerAnalogica|Andar|Parar
+;
+
+Porta:
+name=(PortaDigital|PortaAnalogica)
+;
+
+enum TipoPorta:
+DIGITAL|ANALOGICA
+;
+
+PortaAnalogica:
+valor=AnalogicaOuId
+;
+
+AnalogicaOuId:
+ANALOGICA | ID
+;
+
+PortaDigital:
+valor=DigitalOuId
+;
+
+DigitalOuId:
+INT | ID
+;
+
+terminal ANALOGICA:
+'A' INT;
+
+ReceberValor:
+tipo=(ExistenteVariavelRecebe|NovaVariavelRecebe)
+;
+
+
+ExistenteVariavelRecebe:
+name=ValorReferencia '<-'
+;
+
+ValorReferencia:
+ID
+;
+
+NovaVariavelRecebe:
+VariavelNome '<-'
+;
+
+VariavelNome:
+tipo=Tipo name=ID
+;
+
+VariavelOuPorta:
+name=Porta
+;
+
+VariavelOuNumero:
+ID|INT
+;
+
+Nome:
+name=ID
+;
+
+ConteudoEscrever:
+Nome | Texto | Inteiro
+;
+
+Texto:
+name=STRING
+;
+
+Inteiro:
+name=INT
+;
+
+TextoOuNumero:
+STRING | INT
+;
+
+ValorLiteral:
+TextoOuNumero | ANALOGICA
+;
+
+VariavelValor:
+ValorLiteral | ValorReferencia
+;
+
+DisplayValor:
+ID | STRING | INT
+;
+
+Variavel:
+variavelNome=VariavelNome ('<-' valor=VariavelValor)?';'
+;
+
+VariavelExistente:
+atribuicao=ExistenteVariavelRecebe valor=VariavelValor';'
+;
+
+terminal CONSTANTENOME:
+('A'..'Z')
+;
+
+ConstanteVariavel:
+tipo=Tipo variavelNome=ID '<-' valor=VariavelValor';'
+;
+
+Constante:
+'CONSTANTE' variavel=ConstanteVariavel
+;
+
+enum Tipo:
+Texto | Numero
+;
+
+// Controle
+Controle:
+//ses+=Se
+paras+=Para
+;
+
+Logico:
+relation = ("="|"<>"|"<"|"<="|">="|">")
+;
+
+// SENSORIAMENTO
+
+// SENSORIAMENTO
+
+// SENSORIAMENTO
+// LER
+
+//Ler:
+// atribuicao=ReceberValor ler=FuncaoLer
+//;
+//FuncaoLer:
+// 'ler' '(' tipoPorta=TipoPorta "," porta=Porta ')' ';'
+//;
+
+Ler:
+atribuicao=ReceberValor ler=FuncaoLer
+;
+
+FuncaoLer:
+'ler' '(' ')' ';'
+;
+
+LerDigital:
+atribuicao=ReceberValor ler=FuncaoLerDigital
+;
+FuncaoLerDigital:
+'lerDigital' '(' porta=Porta ')' ';'
+;
+
+LerAnalogica:
+atribuicao=ReceberValor ler=FuncaoLerAnalogica
+;
+FuncaoLerAnalogica:
+'lerAnalogica' '(' porta=Porta ')' ';'
+;
+
+// NOTIFICACAO
+
+// NOTIFICACAO
+
+// NOTIFICACAO
+// DISPLAY, BIP, LIGAR
+
+Escrever:
+'escrever' mensagem=ConteudoEscrever';'
+;
+
+Tela:
+'tela' mensagem=DisplayValor ';'
+;
+
+Bip:
+'bip' '(' tipo=TipoBip ')' ';'
+;
+
+TipoBip:
+'curto'|'medio'|'longo'
+;
+
+Ligar:
+'ligar' '(' tipoPorta=TipoPorta "," porta=Porta ')' ';'
+;
+
+Desligar:
+'desligar' '(' tipoPorta=TipoPorta "," porta=Porta ')' ';'
+;
+
+// MOVIMENTO
+
+// MOVIMENTO
+
+// MOVIMENTO
+// SERVO, LIGARMOTORDC, DESLIGARMOTORDC
+
+Servo:
+'girarServo' '(' porta=VariavelOuPorta','posicao=INT ')' ';'
+;
+
+enum Direcao:
+FRENTE|TRAS
+;
+
+MotorDC:
+'motorDC' '(' estado=INT ',' direcao=Direcao ')' ';'
+;
+
+Andar:
+'andar' '(' porta=VariavelOuPorta ',' velocidade=INT ',' direcao=Direcao ')' ';'
+;
+
+Parar:
+'parar' '(' porta=Porta ')' ';'
+;
+
+//LigarMotorDC:
+// 'ligarMotor' '(' porta=VariavelOuPorta ')' ';'
+//;
+//
+//DesligarMotorDC:
+// 'desligarMotor' porta=VariavelOuPorta';'
+//;
+
+// ITERACAO
+
+// ITERACAO
+
+// ITERACAO
+// PARA, ENQUANTO, REPITA ATE
+
+Para:
+"para" variavel=ID "de" de=INT "ate" ate=INT "faca"
+(code+=Implementacao)*
+(fimpara=FimPara)
+;
+
+FimPara:
+name="fimpara"
+;
+
+Enquanto:
+"enquanto" '(' valorEsquerda=VariavelValor relacao=Logico valorDireita=VariavelValor ')' "faca"
+(code+=Implementacao)*
+"fimenquanto"
+;
+
+Repita:
+"repita"
+(code+=Implementacao)*
+"ate" '(' valorEsquerda=VariavelValor relacao=Logico valorDireita=VariavelValor ')'
+;
+
+// CONTROLE
+
+// CONTROLE
+
+// CONTROLE
+// SE SENAO, ESCOLHA CASO
+Se:
+'se' valorEsquerda=VariavelValor relacao=Logico valorDireita=VariavelValor 'entao'
+(code+=Implementacao)*
+(senao=Senao)?
+(fimse=Fimse)
+;
+
+Fimse:
+name='fimse'
+;
+
+Senao:
+'senao'
+(code+=Implementacao)*
+;
+
+Escolha:
+'escolha' valor=ValorReferencia
+(casos+=Caso)+
+'fimescolha'
+;
+
+Caso:
+'caso' valor=TextoOuNumero 'faca'
+(codigo+=Codigo)
+'fimcaso'
+;
+
+//FUNCAO
+
+Funcao:
+'funcao' name=ID (parametro=Parametro)? ':' tipo=Tipo
+(codigo+=Implementacao)*
+('retorne' retorno=VariavelValor ';')?
+'fimfuncao'
+;
+
+Parametro:
+'(' (valor+=VariavelNome)* ')'
+;
+
+//DELAY
+
+Espera:
+'esperar' '(' valor=INT ')' ';'
+;
+
+// Matematica
+Soma:
+name=ReceberValor valorEsquerda=VariavelOuNumero '+' valorDireita=VariavelOuNumero';'
+;

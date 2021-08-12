@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: br.edu.utfpr.oiardubot
+Bundle-ManifestVersion: 2
+Bundle-Name: br.edu.utfpr.oiardubot
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: br.edu.utfpr.oiardubot; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11,
+ JavaSE-1.8
+Export-Package: br.edu.utfpr.oiardubot.validation,
+ br.edu.utfpr.oiardubot.generator,
+ br.edu.utfpr.oiardubot,
+ br.edu.utfpr.oiardubot.parser.antlr,
+ br.edu.utfpr.oiardubot.parser.antlr.internal,
+ br.edu.utfpr.oiardubot.oiArdubot.impl,
+ br.edu.utfpr.oiardubot.oiArdubot,
+ br.edu.utfpr.oiardubot.serializer,
+ br.edu.utfpr.oiardubot.services,
+ br.edu.utfpr.oiardubot.oiArdubot.util,
+ br.edu.utfpr.oiardubot.scoping
+Import-Package: org.apache.log4j

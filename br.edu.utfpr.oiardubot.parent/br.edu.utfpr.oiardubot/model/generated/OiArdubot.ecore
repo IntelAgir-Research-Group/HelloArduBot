@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="oiArdubot" nsURI="http://www.edu.br/utfpr/oiardubot/OiArdubot"
+    nsPrefix="oiArdubot">
+  <eClassifiers xsi:type="ecore:EClass" name="Model">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="var" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variaveis" upperBound="-1"
+        eType="#//Variavel" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constantes" upperBound="-1"
+        eType="#//Constante" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ini" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="codigo" upperBound="-1"
+        eType="#//Implementacao" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fim" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Codigo">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="code" upperBound="-1" eType="#//Implementacao"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Implementacao"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Porta">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TipoPorta">
+    <eLiterals name="DIGITAL" literal="DIGITAL"/>
+    <eLiterals name="ANALOGICA" value="1" literal="ANALOGICA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PortaAnalogica">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PortaDigital">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReceberValor">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tipo" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExistenteVariavelRecebe">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NovaVariavelRecebe"/>
+  <eClassifiers xsi:type="ecore:EClass" name="VariavelNome" eSuperTypes="#//NovaVariavelRecebe">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipo" eType="#//Tipo"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VariavelOuPorta">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Porta"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Nome" eSuperTypes="#//ConteudoEscrever">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConteudoEscrever"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Texto" eSuperTypes="#//ConteudoEscrever">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Inteiro" eSuperTypes="#//ConteudoEscrever">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Variavel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variavelNome" eType="#//VariavelNome"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VariavelExistente" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="atribuicao" eType="#//ExistenteVariavelRecebe"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConstanteVariavel">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipo" eType="#//Tipo"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="variavelNome" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Constante">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variavel" eType="#//ConstanteVariavel"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Tipo">
+    <eLiterals name="Texto" literal="Texto"/>
+    <eLiterals name="Numero" value="1" literal="Numero"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Controle">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="paras" upperBound="-1"
+        eType="#//Para" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Logico">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="relation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ler" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="atribuicao" eType="#//ReceberValor"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ler" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LerDigital" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="atribuicao" eType="#//ReceberValor"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ler" eType="#//FuncaoLerDigital"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FuncaoLerDigital">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="porta" eType="#//Porta"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LerAnalogica" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="atribuicao" eType="#//ReceberValor"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ler" eType="#//FuncaoLerAnalogica"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FuncaoLerAnalogica">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="porta" eType="#//Porta"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Escrever" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="mensagem" eType="#//ConteudoEscrever"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Tela" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mensagem" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bip" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ligar" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipoPorta" eType="#//TipoPorta"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="porta" eType="#//Porta"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Desligar" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipoPorta" eType="#//TipoPorta"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="porta" eType="#//Porta"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Servo" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="porta" eType="#//VariavelOuPorta"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="posicao" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Direcao">
+    <eLiterals name="FRENTE" literal="FRENTE"/>
+    <eLiterals name="TRAS" value="1" literal="TRAS"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MotorDC" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="estado" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="direcao" eType="#//Direcao"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Andar" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="porta" eType="#//VariavelOuPorta"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="velocidade" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="direcao" eType="#//Direcao"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parar" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="porta" eType="#//Porta"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Para" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="variavel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="de" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="code" upperBound="-1" eType="#//Implementacao"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fimpara" eType="#//FimPara"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FimPara">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Enquanto" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorEsquerda" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relacao" eType="#//Logico"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorDireita" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="code" upperBound="-1" eType="#//Implementacao"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Repita" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="code" upperBound="-1" eType="#//Implementacao"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorEsquerda" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relacao" eType="#//Logico"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorDireita" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Se" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorEsquerda" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relacao" eType="#//Logico"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorDireita" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="code" upperBound="-1" eType="#//Implementacao"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="senao" eType="#//Senao"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fimse" eType="#//Fimse"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Fimse">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Senao">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="code" upperBound="-1" eType="#//Implementacao"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Escolha" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="casos" upperBound="-1"
+        eType="#//Caso" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Caso">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="codigo" upperBound="-1"
+        eType="#//Codigo" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Funcao" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parametro" eType="#//Parametro"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tipo" eType="#//Tipo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="codigo" upperBound="-1"
+        eType="#//Implementacao" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="retorno" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parametro">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="valor" upperBound="-1"
+        eType="#//VariavelNome" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Espera" eSuperTypes="#//Implementacao">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Soma">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//ReceberValor"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorEsquerda" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valorDireita" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>
