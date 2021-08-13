@@ -9,12 +9,18 @@ Para que o desenvolvimento e implementação desse projeto fosse possível, fora
 <br>
 
 <p align="center">
-<img src="images/eclipse.png" alt="Eclipse IDE" href="eclipse.org" width="120">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="images/eclipse.png" alt="Eclipse IDE"  width="120">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="images/xtext.png" width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="images/xtend.png" width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="images/arduino.png" width="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="images/vue.png" width="40">
 </p>
+
+> - [Eclipse IDE](https://www.eclipse.org/downloads/)
+> - [Xtext](https://www.eclipse.org/Xtext/)
+> - [Xtend](https://www.eclipse.org/xtend/)
+> - [Arduino](https://www.arduino.cc/)
+> - [Vue.js](https://vuejs.org/)
 
 <br>
 <br>
@@ -25,6 +31,17 @@ O modelo usado para desenvolvimento da linguagem é ilustrado abaixo, tendo sido
 <br>
 > <img src="images/class-diagram.png">
 Com base nele implementamos todas as classes existentes na [OiArduBot](https://github.com/IntelAgir-Research-Group/OiArduBot).
+<br>
+<br>
+
+## Arquitetura
+
+Caso deseja fazer um tutorial de introdução para entender melhor como estas tecnologias funcionam e trabalham de forma cooperativa, acesse:
+
+- [Tutorial de 15 minutos](https://www.eclipse.org/Xtext/documentation/102_domainmodelwalkthrough.html): disponível no site oficial do Xtext;
+- [Tutorial de 15 minutos extendido](https://www.eclipse.org/Xtext/documentation/103_domainmodelnextsteps.html): extensão do tutorial anterior;
+- [Gramática do Xtext](https://www.eclipse.org/Xtext/documentation/301_grammarlanguage.html): artigo introdutório sobre a gramática que o Xtext utiliza.
+<br>
 <br>
 
 ## Editor
@@ -112,8 +129,16 @@ Se tudo der certo, você deverá ver agora a seguinte mensagem:
 Acesse [http://localhost:8080/](http://localhost:8080/) no seu navegador e você deverá ver o editor em execução
 <br>
 > <img src="images/editor2.png">
+<br>
+<br>
 
+## Contribua
 
+Caso queira contribuir com o projeto, estamos abertos para sugestões e melhorias! Se desejar, contate-nos no [discord](https://discord.com/):
+> Gustavo: ```Gust4v0#4049```
 
+> Michel: ```michelalbonico#4386```
+
+ou participe do nosso servidor no discord clicando [aqui](https://discord.gg/5tk6D9g9TW).
 
 
