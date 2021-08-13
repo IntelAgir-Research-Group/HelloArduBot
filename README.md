@@ -21,8 +21,6 @@ Para que o desenvolvimento e implementação desse projeto fosse possível, fora
 > - [Xtend](https://www.eclipse.org/xtend/)
 > - [Arduino](https://www.arduino.cc/)
 > - [Vue.js](https://vuejs.org/)
-
-<br>
 <br>
 
 ## Modelo
@@ -42,18 +40,15 @@ Caso deseja fazer um tutorial de introdução para entender melhor como estas te
 - [Tutorial de 15 minutos extendido](https://www.eclipse.org/Xtext/documentation/103_domainmodelnextsteps.html): extensão do tutorial anterior;
 - [Gramática do Xtext](https://www.eclipse.org/Xtext/documentation/301_grammarlanguage.html): artigo introdutório sobre a gramática que o Xtext utiliza.
 <br>
-<br>
 
 ## Editor
 ### Faça o clone do projeto clicando [aqui](https://github.com/IntelAgir-Research-Group/oiArdubot-editor) e siga as instruções abaixo para execução do projeto.
-
 <br>
 
 ### O passo a passo se divide em 3 partes:
 > 1. [Tradutor da Linguagem](#parte-1-tradutor)
 > 2. [Backend](#parte-2-backend)
 > 3. [Frontend](#parte-3-frontend)
-
 <br> 
 
 ### Parte 1. Tradutor da Linguagem
