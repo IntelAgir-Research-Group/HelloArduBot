@@ -130,9 +130,10 @@ Acesse [http://localhost:8080/](http://localhost:8080/) no seu navegador e você
 ## Contribua
 
 Caso queira contribuir com o projeto, estamos abertos para sugestões e melhorias! Se desejar, contate-nos no [discord](https://discord.com/):
-> ```Gustavo: Gust4v0#4049```
 
->```Michel: michelalbonico#4386```
+```Gustavo: Gust4v0#4049```
+
+```Michel: michelalbonico#4386```
 
 ou participe do nosso servidor no discord clicando [aqui](https://discord.gg/5tk6D9g9TW).
 
