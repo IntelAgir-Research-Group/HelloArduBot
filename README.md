@@ -90,7 +90,7 @@ Se tudo der certo, você deverá ver agora a seguinte mensagem:
 > <img src="images/frontend.png">
 <br>
 
-### 3.3 Acesse [http://localhost:8080/](http://localhost:8080/) no seu navegador e você deverá ver o editor em execução
+## Acesse [http://localhost:8080/](http://localhost:8080/) no seu navegador e você deverá ver o editor em execução
 
 
 
