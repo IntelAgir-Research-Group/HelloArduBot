@@ -1,5 +1,9 @@
 # OiArduBot &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/IntelAgir-Research-Group/OiArduBot/blob/main/LICENSE) [![npm](https://img.shields.io/badge/-npm-CB3837?logo=npm)](https://www.npmjs.com/package/npm/v/6.14.4) [![Vue.js](https://img.shields.io/badge/-Vue.js-388a65?logo=vue.js)](https://vuejs.org/) [![Eclipse IDE](https://img.shields.io/badge/-Eclipse%20IDE-2C2255?logo=EclipseIDE)](https://www.eclipse.org/downloads/) [![Xtext](https://img.shields.io/badge/-Xtext-2C2255)](https://www.eclipse.org/Xtext/) [![Xtend](https://img.shields.io/badge/-Xtend-2C2255)](https://www.eclipse.org/xtend/) [![Arduino](https://img.shields.io/badge/-Arduino-1f635b?logo=arduino)](https://www.arduino.cc/)
 
+<p align="center">
+<img src="images/logo.png" width="60%">
+</p>
+
 Linguagem de alto nível baseada no Portugol para o ensino de programação com Arduino.
 
 Essa linguagem de domínio específico foi desenvolvida como Trabalho de Conclusão de curso, na UTFPR, Francisco Beltrão, sob a orientação do professor [Michel Albonico](https://michelalbonico.github.io/) e coorientação da Profa. Maici Leite.
@@ -92,7 +96,7 @@ npm run start
 <br>
 
 Se tudo der certo, você deverá ver uma mensagem como esta
-> <img src="images/backend.png">
+> <img src="images/backend.png" width="70%">
 <br>
 
 ### Parte 3. Frontend
@@ -118,7 +122,7 @@ npm run serve
 
 
 Se tudo der certo, você deverá ver agora a seguinte mensagem:
-> <img src="images/frontend.png">
+> <img src="images/frontend.png" width="70%">
 <br>
 
 Acesse [http://localhost:8080/](http://localhost:8080/) no seu navegador e você deverá ver o editor em execução
