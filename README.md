@@ -10,9 +10,9 @@ Essa linguagem de domínio específico foi desenvolvida como Trabalho de Conclus
 <br>
 
 ### O passo a passo se divide em 3 partes:
-> - 1. [Tradutor da Linguagem](#parte-1-tradutor)
-> - 2. [Backend](#parte-2-backend)
-> - 3. [Frontend](#parte-3-frontend)
+> 1. [Tradutor da Linguagem](#parte-1-tradutor)
+> 2. [Backend](#parte-2-backend)
+> 3. [Frontend](#parte-3-frontend)
 
 <br> 
 
@@ -64,7 +64,7 @@ listining http://localhost:8085
 ```
 <br>
 
-### Parte 3. Front
+### Parte 3. Frontend
 <br>
 
 > 2.1 Acesse o diretório oiArdubot-editor/frontend
