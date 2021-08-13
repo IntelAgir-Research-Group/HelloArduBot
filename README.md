@@ -88,7 +88,7 @@ Se tudo der certo, você deverá ver agora a seguinte mensagem:
 
 Acesse [http://localhost:8080/](http://localhost:8080/) no seu navegador e você deverá ver o editor em execução
 <br>
-> <img src="images/editor.png">
+> <img src="images/editor2.png">
 
 
 
