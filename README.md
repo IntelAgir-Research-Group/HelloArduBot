@@ -32,9 +32,7 @@ java -jar language_server.jar
 <br>
 
 Se tudo der certo, você deverá ver uma mensagem como esta
-```
-[Thread-8] INFO br.edu.utfpr.oiardubot.web.ServerLauncher - Press enter to stop the server...
-```
+> <img src="images/languageserver.png">
 <br>
 
 ### Parte 2. Backend
@@ -59,9 +57,7 @@ npm run start
 <br>
 
 Se tudo der certo, você deverá ver uma mensagem como esta
-```
-listining http://localhost:8085
-```
+> <img src="images/backend.png">
 <br>
 
 ### Parte 3. Frontend
