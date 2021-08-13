@@ -45,14 +45,14 @@ Caso deseja fazer um tutorial de introdução para entender melhor como estas te
 <br>
 
 ## Editor
-### Faça o clone do projeto clicando [aqui](https://github.com/IntelAgir-Research-Group/oiArdubot-editor) e siga as instruções abaixo para execução do projeto.
-<br>
+Faça o clone do projeto clicando [aqui](https://github.com/IntelAgir-Research-Group/oiArdubot-editor) e siga as instruções abaixo para execução do projeto.
+
 
 ### O passo a passo se divide em 3 partes:
 > 1. [Tradutor da Linguagem](#parte-1-tradutor)
 > 2. [Backend](#parte-2-backend)
 > 3. [Frontend](#parte-3-frontend)
-<br> 
+
 
 ### Parte 1. Tradutor da Linguagem
 <br>
@@ -70,11 +70,11 @@ java -jar language_server.jar
 <br>
 
 Se tudo der certo, você deverá ver uma mensagem como esta
-> <img src="images/languageserver.png">
+> <img src="images/languageserver.png" width="70%">
 <br>
 
 ### Parte 2. Backend
-<br>
+
 
 2.1 Acesse o diretório oiArdubot-editor/backend
 ```
@@ -95,11 +95,11 @@ npm run start
 <br>
 
 Se tudo der certo, você deverá ver uma mensagem como esta
-> <img src="images/backend.png" width="70%">
+> <img src="images/backend.png" width="50%">
 <br>
 
 ### Parte 3. Frontend
-<br>
+
 
 3.1 Acesse o diretório oiArdubot-editor/frontend
 ```
@@ -121,7 +121,7 @@ npm run serve
 
 
 Se tudo der certo, você deverá ver agora a seguinte mensagem:
-> <img src="images/frontend.png" width="70%">
+> <img src="images/frontend.png" width="50%">
 <br>
 
 Acesse [http://localhost:8080/](http://localhost:8080/) no seu navegador e você deverá ver o editor em execução
