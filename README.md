@@ -19,19 +19,19 @@ Essa linguagem de domínio específico foi desenvolvida como Trabalho de Conclus
 ### Parte 1. Tradutor da Linguagem
 <br>
 
-<span style="color:blue"> > 1.1 Acesse o diretório oiArdubot-editor/backend/language_server</span>
+1.1 Acesse o diretório oiArdubot-editor/backend/language_server
 ```
 $ cd oiArdubot-editor/backend/language_server
 ```
 <br>
 
-> 1.2 Execute o tradutor
+1.2 Execute o tradutor
 ```
 java -jar language_server.jar
 ```
 <br>
 
-> Se tudo der certo, você deverá ver uma mensagem como esta
+Se tudo der certo, você deverá ver uma mensagem como esta
 ```
 [Thread-8] INFO br.edu.utfpr.oiardubot.web.ServerLauncher - Press enter to stop the server...
 ```
@@ -40,25 +40,25 @@ java -jar language_server.jar
 ### Parte 2. Backend
 <br>
 
-> 2.1 Acesse o diretório oiArdubot-editor/backend
+2.1 Acesse o diretório oiArdubot-editor/backend
 ```
 $ cd oiArdubot-editor/backend
 ```
 <br>
 
-> 2.2 Instale as dependências do projeto
+2.2 Instale as dependências do projeto
 ```
 npm install
 ```
 <br>
 
-> 2.3 Execute o servidor backend do projeto
+2.3 Execute o servidor backend do projeto
 ```
 npm run start
 ```
 <br>
 
-> Se tudo der certo, você deverá ver uma mensagem como esta
+Se tudo der certo, você deverá ver uma mensagem como esta
 ```
 listining http://localhost:8085
 ```
@@ -67,19 +67,19 @@ listining http://localhost:8085
 ### Parte 3. Frontend
 <br>
 
-> 2.1 Acesse o diretório oiArdubot-editor/frontend
+3.1 Acesse o diretório oiArdubot-editor/frontend
 ```
 $ cd oiArdubot-editor/frontend
 ```
 <br>
 
-### 3.2 Instale as dependências do projeto
+3.2 Instale as dependências do projeto
 ```
 npm install
 ```
 <br>
 
-### 3.3 Execução do servidor para acesso local
+3.3 Execução do servidor para acesso local
 ```
 npm run serve
 ```
