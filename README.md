@@ -19,7 +19,7 @@ Essa linguagem de domínio específico foi desenvolvida como Trabalho de Conclus
 ### Parte 1. Tradutor da Linguagem
 <br>
 
-> 1.1 Acesse o diretório oiArdubot-editor/backend/language_server
+<span style="color:blue"> > 1.1 Acesse o diretório oiArdubot-editor/backend/language_server</span>
 ```
 $ cd oiArdubot-editor/backend/language_server
 ```
