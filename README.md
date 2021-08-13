@@ -9,11 +9,11 @@ Para que o desenvolvimento e implementação desse projeto fosse possível, fora
 <br>
 
 <p align="center">
-<img src="images/eclipse.png" width="100">&nbsp;&nbsp;&nbsp;
-<img src="images/xtext.png" width="80">&nbsp;&nbsp;&nbsp;
-<img src="images/xtend.png" width="80">&nbsp;&nbsp;&nbsp;
-<img src="images/arduino.png" width="50">&nbsp;&nbsp;&nbsp;
-<img src="images/vue.png" width="30">
+<img src="images/eclipse.png" width="120">&nbsp;&nbsp;&nbsp;
+<img src="images/xtext.png" width="100">&nbsp;&nbsp;&nbsp;
+<img src="images/xtend.png" width="100">&nbsp;&nbsp;&nbsp;
+<img src="images/arduino.png" width="60">&nbsp;&nbsp;&nbsp;
+<img src="images/vue.png" width="40">
 </p>
 
 <br>
