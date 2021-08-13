@@ -9,7 +9,7 @@ Para que o desenvolvimento e implementação desse projeto fosse possível, fora
 <br>
 
 <p align="center">
-<img src="images/eclipse.png" alt="Eclipse IDE" width="120">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="images/eclipse.png" alt="Eclipse IDE" href="eclipse.org" width="120">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="images/xtext.png" width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="images/xtend.png" width="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="images/arduino.png" width="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
