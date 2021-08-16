@@ -44,12 +44,19 @@ Caso deseja fazer um tutorial de introdução para entender melhor como estas te
 - [Gramática do Xtext](https://www.eclipse.org/Xtext/documentation/301_grammarlanguage.html): artigo introdutório sobre a gramática que o Xtext utiliza.
 <br>
 
+## Dependência
+Existem algumas dependências para execução do projeto, que podem ser baixadas a partir da lista de links a seguir.
+
+> 1. JDK (Java Development Kit): https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html;
+> 2. Eclipse e Xtext: https://www.eclipse.org/Xtext/ - Após iniciar a instalação, selecione a opção que faz menção ao desenvolvimento de linguagens de domínio específico (DSL);
+> 3. Node JS e NPM: https://nodejs.org/en/download/.
+
 ## Editor
 Faça o clone do projeto clicando [aqui](https://github.com/IntelAgir-Research-Group/oiArdubot-editor) e siga as instruções abaixo para execução do projeto.
 
 
 ### O passo a passo se divide em 3 partes:
-> 1. [Tradutor da Linguagem](#parte-1-tradutor)
+> 1. [Tradutor da Linguagem](#parte-1-tradutor-da-linguagem)
 > 2. [Backend](#parte-2-backend)
 > 3. [Frontend](#parte-3-frontend)
 
