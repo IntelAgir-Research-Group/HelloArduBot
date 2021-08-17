@@ -44,7 +44,7 @@ Caso deseja fazer um tutorial de introdução para entender melhor como estas te
 - [Gramática do Xtext](https://www.eclipse.org/Xtext/documentation/301_grammarlanguage.html): artigo introdutório sobre a gramática que o Xtext utiliza.
 <br>
 
-## Dependência
+## Dependências
 Existem algumas dependências para execução do projeto, que podem ser baixadas a partir da lista de links a seguir.
 
 > 1. JDK (Java Development Kit): https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html;
