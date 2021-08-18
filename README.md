@@ -81,7 +81,7 @@ git clone https://github.com/IntelAgir-Research-Group/oiArdubot-editor.git
 
 1.3 Acessar o projeto
 
-Se desejar, acesse oo projeto por meio do comando abaixo
+Se desejar, acesse o projeto por meio do comando abaixo
 ```
 cd oiArdubot-editor
 ```
