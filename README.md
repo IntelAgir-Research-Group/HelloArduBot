@@ -52,25 +52,50 @@ Existem algumas dependências para execução do projeto, que podem ser baixadas
 > 3. Node JS e NPM: https://nodejs.org/en/download/.
 
 ## Editor
-Faça o clone do projeto clicando [aqui](https://github.com/IntelAgir-Research-Group/oiArdubot-editor) e siga as instruções abaixo para execução do projeto.
+Caso deseje, você pode acessar o repositório do editor clicando [aqui](https://github.com/IntelAgir-Research-Group/oiArdubot-editor), que está separado para fins de organização. Siga as instruções abaixo para execução do projeto.
 
 
-### O passo a passo se divide em 3 partes:
-> 1. [Tradutor da Linguagem](#parte-1-tradutor-da-linguagem)
-> 2. [Backend](#parte-2-backend)
-> 3. [Frontend](#parte-3-frontend)
+### O passo a passo se divide em 4 partes:
+> 1. [Clonar o projeto](#parte-1-clonar-projeto)
+> 2. [Tradutor da Linguagem](#parte-2-tradutor-da-linguagem)
+> 3. [Backend](#parte-3-backend)
+> 4. [Frontend](#parte-4-frontend)
 
+<br/>
 
-### Parte 1. Tradutor da Linguagem
+### Parte 1. Clonar projeto
 <br>
 
-1.1 Acesse o diretório oiArdubot-editor/backend/language_server
+1.1 Instalar o git em seu computador
+
+Caso ainda não tenha o git instalado em sua máquina, siga um tutorial rápido de instalação clicando [aqui](https://www.hostinger.com.br/tutoriais/tutorial-do-git-basics-introducao#:~:text=Instalar%20o%20GIT%20no%20Windows%3A&text=Acesse%20o%20site%20oficial%20e,concluir%20com%20%C3%AAxito%20a%20instala%C3%A7%C3%A3o.). Se já tiver o git devidamente instalado e configurado, pode pular para o próximo passo.
+<br>
+
+1.2 Faça o clone do projeto
+
+Com o git já instalado, execute o seguinte comando para clonar o projeto.
+```
+git clone https://github.com/IntelAgir-Research-Group/oiArdubot-editor.git
+```
+<br>
+
+1.3 Acessar o projeto
+
+Se desejar, acesse oo projeto por meio do comando abaixo
+```
+cd oiArdubot-editor
+```
+
+### Parte 2. Tradutor da Linguagem
+<br>
+
+2.1 Acesse o diretório oiArdubot-editor/backend/language_server
 ```
 $ cd oiArdubot-editor/backend/language_server
 ```
 <br>
 
-1.2 Execute o tradutor
+2.2 Execute o tradutor
 ```
 java -jar language_server.jar
 ```
@@ -80,37 +105,12 @@ Se tudo der certo, você deverá ver uma mensagem como esta
 > <img src="images/languageserver.png" width="70%">
 <br>
 
-### Parte 2. Backend
+### Parte 3. Backend
+<br/>
 
-
-2.1 Acesse o diretório oiArdubot-editor/backend
+3.1 Acesse o diretório oiArdubot-editor/backend
 ```
-$ cd oiArdubot-editor/backend
-```
-<br>
-
-2.2 Instale as dependências do projeto
-```
-npm install
-```
-<br>
-
-2.3 Execute o servidor backend do projeto
-```
-npm run start
-```
-<br>
-
-Se tudo der certo, você deverá ver uma mensagem como esta
-> <img src="images/backend.png" width="50%">
-<br>
-
-### Parte 3. Frontend
-
-
-3.1 Acesse o diretório oiArdubot-editor/frontend
-```
-$ cd oiArdubot-editor/frontend
+cd oiArdubot-editor/backend
 ```
 <br>
 
@@ -120,7 +120,32 @@ npm install
 ```
 <br>
 
-3.3 Execução do servidor para acesso local
+3.3 Execute o servidor backend do projeto
+```
+npm run start
+```
+<br>
+
+Se tudo der certo, você deverá ver uma mensagem como esta
+> <img src="images/backend.png" width="50%">
+<br>
+
+### Parte 4. Frontend
+
+
+4.1 Acesse o diretório oiArdubot-editor/frontend
+```
+$ cd oiArdubot-editor/frontend
+```
+<br>
+
+4.2 Instale as dependências do projeto
+```
+npm install
+```
+<br>
+
+4.3 Execução do servidor para acesso local
 ```
 npm run serve
 ```
@@ -147,4 +172,10 @@ Caso queira contribuir com o projeto, estamos abertos para sugestões e melhoria
 
 ou participe do nosso servidor no discord clicando [aqui](https://discord.gg/5tk6D9g9TW).
 
+<br/>
 
+## Tutoriais
+
+Se desejar aprender mais sobre o Xtext e como implementar novas funcionalidades na OiArduBot, você pode acessar nosso canal no yotube: https://www.youtube.com/channel/UCA0wEiCDD129-Mrc8RFFIDQ.
+
+![Como implementar uma nova funcionalidade na OiArduBot](https://www.youtube.com/watch?v=UW5lpKMP9DY).
