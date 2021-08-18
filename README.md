@@ -178,4 +178,11 @@ ou participe do nosso servidor no discord clicando [aqui](https://discord.gg/5tk
 
 Se desejar aprender mais sobre o Xtext e como implementar novas funcionalidades na OiArduBot, você pode acessar nosso canal no yotube: https://www.youtube.com/channel/UCA0wEiCDD129-Mrc8RFFIDQ.
 
-![Como implementar uma nova funcionalidade na OiArduBot](https://www.youtube.com/watch?v=UW5lpKMP9DY).
+
+### Vídeo mais recente: Como implementar uma nova funcionalidade na OiArduBot
+
+Link: https://www.youtube.com/watch?v=UW5lpKMP9DY
+
+
+
+
