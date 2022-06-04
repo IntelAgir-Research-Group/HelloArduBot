@@ -1,12 +1,14 @@
 # HelloArduBot &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/IntelAgir-Research-Group/OiArduBot/blob/main/LICENSE) [![npm](https://img.shields.io/badge/-npm-CB3837?logo=npm)](https://www.npmjs.com/package/npm/v/6.14.4) [![Vue.js](https://img.shields.io/badge/-Vue.js-388a65?logo=vue.js)](https://vuejs.org/) [![Eclipse IDE](https://img.shields.io/badge/-Eclipse%20IDE-2C2255?logo=EclipseIDE)](https://www.eclipse.org/downloads/) [![Xtext](https://img.shields.io/badge/-Xtext-2C2255)](https://www.eclipse.org/Xtext/) [![Xtend](https://img.shields.io/badge/-Xtend-2C2255)](https://www.eclipse.org/xtend/) [![Arduino](https://img.shields.io/badge/-Arduino-1f635b?logo=arduino)](https://www.arduino.cc/)
 
+For PT/BR Version (check [this](https://github.com/IntelAgir-Research-Group/HelloArduBot/tree/OiArduBot-PT_BR)).
+
 <p align="center">
 <img src="images/logo2.png" width="30%">
 </p>
 
 **HelloArduBot: A DSL For Teaching Programming To Incoming Students With Open-source Robotic (OSR) Projects**
 
-This DSL was initially designed in the bachelor project of Gustavo Slomski at UTFPR, Francisco Beltrão - Brazil, under the supervision of Professor [Michel Albonico](https://michelalbonico.github.io/). Its first version, in Portuguese, can be found [here](https://github.com/IntelAgir-Research-Group/OiArduBot). This version has especially been developed for further international collaboration.
+This DSL was initially designed in the bachelor project of Gustavo Slomski at UTFPR, Francisco Beltrão - Brazil, under the supervision of Professor [Michel Albonico](https://michelalbonico.github.io/). Its Portuguese version (including the language commands) can be found [here](https://github.com/IntelAgir-Research-Group/HelloArduBot/tree/OiArduBot-PT_BR). This version has especially been developed for further international collaboration.
 
 **Do you want to cite us?**
 
