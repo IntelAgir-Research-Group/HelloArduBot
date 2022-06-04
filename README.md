@@ -1,14 +1,31 @@
-# OiArduBot &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/IntelAgir-Research-Group/OiArduBot/blob/main/LICENSE) [![npm](https://img.shields.io/badge/-npm-CB3837?logo=npm)](https://www.npmjs.com/package/npm/v/6.14.4) [![Vue.js](https://img.shields.io/badge/-Vue.js-388a65?logo=vue.js)](https://vuejs.org/) [![Eclipse IDE](https://img.shields.io/badge/-Eclipse%20IDE-2C2255?logo=EclipseIDE)](https://www.eclipse.org/downloads/) [![Xtext](https://img.shields.io/badge/-Xtext-2C2255)](https://www.eclipse.org/Xtext/) [![Xtend](https://img.shields.io/badge/-Xtend-2C2255)](https://www.eclipse.org/xtend/) [![Arduino](https://img.shields.io/badge/-Arduino-1f635b?logo=arduino)](https://www.arduino.cc/)
+# HelloArduBot &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/IntelAgir-Research-Group/OiArduBot/blob/main/LICENSE) [![npm](https://img.shields.io/badge/-npm-CB3837?logo=npm)](https://www.npmjs.com/package/npm/v/6.14.4) [![Vue.js](https://img.shields.io/badge/-Vue.js-388a65?logo=vue.js)](https://vuejs.org/) [![Eclipse IDE](https://img.shields.io/badge/-Eclipse%20IDE-2C2255?logo=EclipseIDE)](https://www.eclipse.org/downloads/) [![Xtext](https://img.shields.io/badge/-Xtext-2C2255)](https://www.eclipse.org/Xtext/) [![Xtend](https://img.shields.io/badge/-Xtend-2C2255)](https://www.eclipse.org/xtend/) [![Arduino](https://img.shields.io/badge/-Arduino-1f635b?logo=arduino)](https://www.arduino.cc/)
 
 <p align="center">
 <img src="images/logo2.png" width="30%">
 </p>
-Linguagem de alto nível baseada no Portugol para o ensino de programação com Arduino.
 
-Essa linguagem de domínio específico foi desenvolvida como Trabalho de Conclusão de curso, na UTFPR, Francisco Beltrão, sob a orientação do professor [Michel Albonico](https://michelalbonico.github.io/) e coorientação da Profa. Maici Leite.
+**HelloArduBot: A DSL For Teaching Programming To Incoming Students With Open-source Robotic (OSR) Projects**
 
-## Tecnologias
-Para que o desenvolvimento e implementação desse projeto fosse possível, foram utilizadas diversas tecnologias, como seguem elencadas logo abaixo.
+This DSL was initially desined in the bachelor project of Gustavo Slomski at UTFPR, Francisco Beltrão - Brazil, under the supervision of professor [Michel Albonico](https://michelalbonico.github.io/). Its first version, in portuguese, can be found [here](https://github.com/IntelAgir-Research-Group/OiArduBot). This version has specially been developed for further international collaboration.
+
+**Do you want to cite us?**
+
+```
+@inproceedings{OSS_2022_HelloArduBot,
+  title = {HelloArduBot: A DSL For Teaching Programming To Incoming Students With Open-source Robotic (OSR) Projects},
+  author = { Gustavo Slomski and Adair José Rohlin and Paulo Varela and Michel Albonico },
+  pages = { To appear },
+  month = { June },
+  publisher = {{Springer}},
+  year      = {2021},
+  booktitle = { Open Source Systems - 18th {IFIP} {WG} 2.13 International Conference,
+               {OSS} 2021, Madrid, Spain, September 6-10, 2022, Proceedings }
+}
+```
+
+## Artifcats
+
+If you are interested into extend/adapt it, here is the list of software/hardware artifacts HelloArduBot is based on:
 <br>
 
 <p align="center">
@@ -18,170 +35,146 @@ Para que o desenvolvimento e implementação desse projeto fosse possível, fora
 <img src="images/arduino.png" width="60">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="images/vue.png" width="40">
 </p>
-
-> - [Eclipse IDE](https://www.eclipse.org/downloads/)
-> - [Xtext](https://www.eclipse.org/Xtext/)
-> - [Xtend](https://www.eclipse.org/xtend/)
-> - [Arduino](https://www.arduino.cc/)
-> - [Vue.js](https://vuejs.org/)
 <br>
 
-## Modelo
+## Language Model
 
-O modelo usado para desenvolvimento da linguagem é ilustrado abaixo, tendo sido exportado do nosso projeto Xtext no Eclipse.
+The following model is used for this version of HelloArduBot:
+
 <br>
-> <img src="images/class-diagram.png">
-Com base nele implementamos todas as classes existentes na [OiArduBot](https://github.com/IntelAgir-Research-Group/OiArduBot).
-<br>
-<br>
-
-## Arquitetura
-
-Caso deseja fazer um tutorial de introdução para entender melhor como estas tecnologias funcionam e trabalham de forma cooperativa, acesse:
-
-- [Tutorial de 15 minutos](https://www.eclipse.org/Xtext/documentation/102_domainmodelwalkthrough.html): disponível no site oficial do Xtext;
-- [Tutorial de 15 minutos extendido](https://www.eclipse.org/Xtext/documentation/103_domainmodelnextsteps.html): extensão do tutorial anterior;
-- [Gramática do Xtext](https://www.eclipse.org/Xtext/documentation/301_grammarlanguage.html): artigo introdutório sobre a gramática que o Xtext utiliza.
+<img src="images/class-diagram.png">
 <br>
 
-## Dependências
-Existem algumas dependências para execução do projeto, que podem ser baixadas a partir da lista de links a seguir.
+## Dependencies
+There are a few dependencies for running HelloArduBot, which are listed bellow:
 
 > 1. JDK (Java Development Kit): https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html;
-> 2. Eclipse e Xtext: https://www.eclipse.org/Xtext/ - Após iniciar a instalação, selecione a opção que faz menção ao desenvolvimento de linguagens de domínio específico (DSL);
-> 3. Node JS e NPM: https://nodejs.org/en/download/.
+> 2. Eclipse and Xtext: https://www.eclipse.org/Xtext/ - During the installatino, select the option that mentions the DSL development;
+> 3. Node JS and NPM: https://nodejs.org/en/download/.
 
 ## Editor
-Caso deseje, você pode acessar o repositório do editor clicando [aqui](https://github.com/IntelAgir-Research-Group/oiArdubot-editor), que está separado para fins de organização. Siga as instruções abaixo para execução do projeto.
+We also make publicly available the source code of HelloArduBot language editor, in the folder **./editor**. It simplifies the process, where students write their code in HelloArduBot, then can download a **.ino** file to be uploaded to Arduino-based robots.
 
-
-### O passo a passo se divide em 4 partes:
-> 1. [Clonar o projeto](#parte-1-clonar-projeto)
-> 2. [Tradutor da Linguagem](#parte-2-tradutor-da-linguagem)
-> 3. [Backend](#parte-3-backend)
-> 4. [Frontend](#parte-4-frontend)
-
+### Follow the steps to run it:
+> 1. [Clone the Project](#part-1-clone-the-project)
+> 2. [Run the HelloArduBot Translator](#part-2-run-the-helloardubot-translator)
+> 3. [Run the Editor Backend](#part-3-run-the-editor-backend)
+> 4. [Run the HelloArduBot Editor](#part-4-run-the-helloardubot-editor)
 <br/>
 
-### Parte 1. Clonar projeto
+### Part 1. Clone the Project
 <br>
 
-1.1 Instalar o git em seu computador
-
-Caso ainda não tenha o git instalado em sua máquina, siga um tutorial rápido de instalação clicando [aqui](https://www.hostinger.com.br/tutoriais/tutorial-do-git-basics-introducao#:~:text=Instalar%20o%20GIT%20no%20Windows%3A&text=Acesse%20o%20site%20oficial%20e,concluir%20com%20%C3%AAxito%20a%20instala%C3%A7%C3%A3o.). Se já tiver o git devidamente instalado e configurado, pode pular para o próximo passo.
-<br>
-
-1.2 Faça o clone do projeto
-
-Com o git já instalado, execute o seguinte comando para clonar o projeto.
 ```
 git clone https://github.com/IntelAgir-Research-Group/oiArdubot-editor.git
 ```
+
+### Part 2. Run the HelloArduBot Translator
 <br>
 
-1.3 Acessar o projeto
+2.1 Go to the oiArdubot-editor/backend/language_server dir:
 
-Se desejar, acesse o projeto por meio do comando abaixo
-```
-cd oiArdubot-editor
-```
-
-### Parte 2. Tradutor da Linguagem
-<br>
-
-2.1 Acesse o diretório oiArdubot-editor/backend/language_server
 ```
 $ cd oiArdubot-editor/backend/language_server
 ```
+
 <br>
 
-2.2 Execute o tradutor
+2.2 Run the JAR with the HelluArduBot translator:
+
 ```
 java -jar language_server.jar
 ```
+
 <br>
 
-Se tudo der certo, você deverá ver uma mensagem como esta
-> <img src="images/languageserver.png" width="70%">
+Then, you must see the following message:
+<img src="images/languageserver.png" width="70%">
 <br>
 
-### Parte 3. Backend
+### Part 3. Run the Editor Backend
 <br/>
 
-3.1 Acesse o diretório oiArdubot-editor/backend
+3.1 Go back to the oiArdubot-editor/backend dir:
+
 ```
 cd oiArdubot-editor/backend
 ```
+
 <br>
 
-3.2 Instale as dependências do projeto
+3.2 Install the dependencies:
+
 ```
 npm install
 ```
+
 <br>
 
-3.3 Execute o servidor backend do projeto
+3.3 Run the backend server:
+
 ```
 npm run start
 ```
+
 <br>
 
-Se tudo der certo, você deverá ver uma mensagem como esta
-> <img src="images/backend.png" width="50%">
+Then, you must see the following message:
+
+<img src="images/backend.png" width="50%">
 <br>
 
-### Parte 4. Frontend
+### Part 4. Run the HelloArduBot Editor
 
 
-4.1 Acesse o diretório oiArdubot-editor/frontend
+4.1 Go to the oiArdubot-editor/frontend dir:
+
 ```
 $ cd oiArdubot-editor/frontend
 ```
 <br>
 
-4.2 Instale as dependências do projeto
+4.2 Install the dependencies:
 ```
 npm install
 ```
 <br>
 
-4.3 Execução do servidor para acesso local
+4.3 Run the local server:
 ```
 npm run serve
 ```
 
 
 
-Se tudo der certo, você deverá ver agora a seguinte mensagem:
-> <img src="images/frontend.png" width="50%">
+Then, you must see the following message:
+
+<img src="images/frontend.png" width="50%">
 <br>
 
-Acesse [http://localhost:8080/](http://localhost:8080/) no seu navegador e você deverá ver o editor em execução
+Now you can access the HelloArduBot editor through  the URL [http://localhost:8080/](http://localhost:8080/) on your preffered browser:
+
 <br>
-> <img src="images/editor2.png">
+<img src="images/editor2.png">
 <br>
 <br>
 
-## Contribua
+## Video Tutorial
 
-Caso queira contribuir com o projeto, estamos abertos para sugestões e melhorias! Se desejar, contate-nos no [discord](https://discord.com/):
+See [this](#) short video of how to code a simple project with HelloArduBot.
+
+## Do you want to contribute or collaborate?
+
+Contact-us on [discord](https://discord.com/):
 
 ```Gustavo: Gust4v0#4049```
 
 ```Michel: michelalbonico#4386```
 
-ou participe do nosso servidor no discord clicando [aqui](https://discord.gg/5tk6D9g9TW).
+or join our discussion server [aqui](https://discord.gg/5tk6D9g9TW).
 
-<br/>
+You can also send an email to [Professor Michel Albonico](mailto:michelalbonico@utfpr.edu.br).
 
-## Tutoriais
-
-Se desejar aprender mais sobre o Xtext e como implementar novas funcionalidades na OiArduBot, você pode acessar nosso canal no yotube: https://www.youtube.com/channel/UCA0wEiCDD129-Mrc8RFFIDQ.
-
-
-### Vídeo mais recente: Como implementar uma nova funcionalidade na OiArduBot
-
-Link: https://www.youtube.com/watch?v=UW5lpKMP9DY
 
 
 
