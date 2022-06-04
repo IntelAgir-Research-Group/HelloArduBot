@@ -6,7 +6,7 @@
 
 **HelloArduBot: A DSL For Teaching Programming To Incoming Students With Open-source Robotic (OSR) Projects**
 
-This DSL was initially desined in the bachelor project of Gustavo Slomski at UTFPR, Francisco Beltrão - Brazil, under the supervision of professor [Michel Albonico](https://michelalbonico.github.io/). Its first version, in portuguese, can be found [here](https://github.com/IntelAgir-Research-Group/OiArduBot). This version has specially been developed for further international collaboration.
+This DSL was initially designed in the bachelor project of Gustavo Slomski at UTFPR, Francisco Beltrão - Brazil, under the supervision of Professor [Michel Albonico](https://michelalbonico.github.io/). Its first version, in Portuguese, can be found [here](https://github.com/IntelAgir-Research-Group/OiArduBot). This version has especially been developed for further international collaboration.
 
 **Do you want to cite us?**
 
@@ -25,7 +25,7 @@ This DSL was initially desined in the bachelor project of Gustavo Slomski at UTF
 
 ## Artifcats
 
-If you are interested into extend/adapt it, here is the list of software/hardware artifacts HelloArduBot is based on:
+If you are interested in extending/adapting it, here is the list of software/hardware artifacts HelloArduBot is based on:
 <br>
 
 <p align="center">
@@ -45,15 +45,8 @@ The following model is used for this version of HelloArduBot:
 <img src="images/class-diagram.png">
 <br>
 
-## Dependencies
-There are a few dependencies for running HelloArduBot, which are listed bellow:
-
-> 1. JDK (Java Development Kit): https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html;
-> 2. Eclipse and Xtext: https://www.eclipse.org/Xtext/ - During the installatino, select the option that mentions the DSL development;
-> 3. Node JS and NPM: https://nodejs.org/en/download/.
-
 ## Editor
-We also make publicly available the source code of HelloArduBot language editor, in the folder **./editor**. It simplifies the process, where students write their code in HelloArduBot, then can download a **.ino** file to be uploaded to Arduino-based robots.
+We also make available the source code of HelloArduBot language editor, in the folder **./editor**. It simplifies the process, where students write their code in HelloArduBot, and can download a **.ino** file to be uploaded to Arduino-based robots.
 
 ### Follow the steps to run it:
 > 1. [Clone the Project](#part-1-clone-the-project)
@@ -152,7 +145,7 @@ Then, you must see the following message:
 <img src="images/frontend.png" width="50%">
 <br>
 
-Now you can access the HelloArduBot editor through  the URL [http://localhost:8080/](http://localhost:8080/) on your preffered browser:
+Now you can access the HelloArduBot editor through  the URL [http://localhost:8080/](http://localhost:8080/) on your preferred browser:
 
 <br>
 <img src="images/editor2.png">
@@ -175,6 +168,7 @@ or join our discussion server [aqui](https://discord.gg/5tk6D9g9TW).
 
 You can also send an email to [Professor Michel Albonico](mailto:michelalbonico@utfpr.edu.br).
 
+We will be happy to collaborate!
 
 
 
